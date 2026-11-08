@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blue Archive | Moca Store</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎀%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+
+<body>
+    <header>
+        <h1 class="teks-tersembunyi">Joki Blue Archive | Moca Store</h1>
+        <img class="banner-game" src="img/blue-archive.webp" alt="Pricelist joki Blue Archive">
+    </header>
+    <nav><button id="tombol-menu" onclick="bukaMenu()">☰ Menu</button>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a href="index.html#layanan">Layanan ▾</a>
+                <div class="drop-isi"><a href="blue-archive.html">Blue Archive</a><a
+                        href="wuthering-waves.html">Wuthering Waves</a><a href="uma-musume.html">Uma Musume</a><a
+                        href="honkai-star-rail.html">Honkai Star Rail</a></div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="isi">
+        <main>
+            <div class="kartu">
+                <h2>Order Blue Archive</h2>
+                <p class="catatan-kecil">Bisa request joki seputar Blue Archive.</p>
+                <form onsubmit="return kirimForm('pesan-order')"><label>Nama</label><input type="text"
+                        required><label>UID / ID game</label><input type="text" required>
+                    <h3>Rawat Akun</h3><label class="cek"><input type="checkbox" name="layanan" value="3000"
+                            onclick="hitungTotal()">Daily (Rp3.000)</label><label class="cek"><input type="checkbox"
+                            name="layanan" value="20000" onclick="hitungTotal()">Weekly (Rp20.000)</label><label
+                        class="cek"><input type="checkbox" name="layanan" value="80000" onclick="hitungTotal()">Monthly
+                        (Rp80.000)</label><label class="cek"><input type="checkbox" name="layanan" value="130000"
+                            onclick="hitungTotal()">VIP (JFD+Raid+Event+FoS) (Rp130.000)</label>
+                    <h3>Raid</h3><label class="cek"><input type="checkbox" name="layanan" value="7000"
+                            onclick="hitungTotal()">Extreme (Rp7.000)</label><label class="cek"><input type="checkbox"
+                            name="layanan" value="10000" onclick="hitungTotal()">Insane (Rp10.000)</label><label
+                        class="cek"><input type="checkbox" name="layanan" value="20000" onclick="hitungTotal()">Torment
+                        (Rp20.000)</label><label class="cek"><input type="checkbox" name="layanan" value="50000"
+                            onclick="hitungTotal()">Lunatic (Rp50.000)</label><label class="cek"><input type="checkbox"
+                            name="layanan" value="20000" onclick="hitungTotal()">F99 (Rp20.000)</label><label
+                        class="cek"><input type="checkbox" name="layanan" value="25000" onclick="hitungTotal()">F100+
+                        (mulai dari) (Rp25.000)</label>
+                    <h3>Stage Mission</h3><label class="cek"><input type="checkbox" name="layanan" value="6000"
+                            onclick="hitungTotal()">Normal (Rp6.000)</label><label class="cek"><input type="checkbox"
+                            name="layanan" value="6000" onclick="hitungTotal()">Hard (Rp6.000)</label>
+                    <h3>Event</h3><label class="cek"><input type="checkbox" name="layanan" value="15000"
+                            onclick="hitungTotal()">Quest + Challenge (Rp15.000)</label>
+                    <h3>Request Khusus</h3><label class="cek"><input type="checkbox" name="layanan" value="0"
+                            onclick="hitungTotal()">Score Chase Raid (harga sesuai request)</label>
+                    <h3>Total: <span id="total">Rp0</span></h3>
+                    <p class="catatan-kecil">Item per star, act, stage, hari, atau harga sesuai request belum masuk
+                        total dan dihitung saat konfirmasi.</p><label>Metode pembayaran</label><select>
+                        <option>QRIS</option>
+                        <option>DANA</option>
+                        <option>GoPay</option>
+                        <option>OVO</option>
+                        <option>SeaBank</option>
+                        <option>ShopeePay</option>
+                        <option>BRI</option>
+                    </select><label>Catatan / request lain</label><textarea rows="3"
+                        placeholder="Tulis request lain di sini"></textarea><label class="cek"><input type="checkbox"
+                            required>Saya setuju dengan <a href="tos.html">Syarat dan Ketentuan</a></label><button
+                        class="btn" type="submit">Kirim Order</button>
+                    <p id="pesan-order"></p>
+                </form>
+            </div>
+        </main>
+        <aside class="sisi sisi-kiri">
+            <div class="kartu">
+                <h3>Order Cepat</h3><a class="btn" href="blue-archive.html">Blue Archive</a><a class="btn"
+                    href="wuthering-waves.html">Wuthering Waves</a><a class="btn" href="uma-musume.html">Uma
+                    Musume</a><a class="btn" href="honkai-star-rail.html">Honkai Star Rail</a>
+            </div>
+            <div class="kartu">
+                <h3>Alur Order</h3>
+                <ol>
+                    <li>Pilih game</li>
+                    <li>Isi formulir order</li>
+                    <li>Bayar dan konfirmasi</li>
+                    <li>Tunggu pengerjaan</li>
+                </ol>
+            </div>
+        </aside>
+        <aside class="sisi sisi-kanan">
+            <div class="kartu">
+                <h3>Status Slot</h3>
+                <p>Slot joki: buka</p>
+            </div>
+            <div class="kartu">
+                <h3>Metode Pembayaran</h3>
+                <p>QRIS, DANA, GoPay, OVO, SeaBank, ShopeePay, dan BRI.</p>
+            </div>
+            <div class="kartu">
+                <h3>Syarat dan Ketentuan</h3>
+                <p>Baca aturan sebelum order.</p><a class="btn" href="tos.html">Baca ToS</a>
+            </div>
+        </aside>
+    </div>
+    <div class="berjalan"><span>Open Slot Joki Game: Blue Archive, Wuthering Waves, Uma Musume, Honkai Star Rail. Hubungi: Facebook, Discord, WhatsApp</span></div>
+    <footer>© 2026 Moca Store. Dibuat oleh Moca. <a href="https://www.facebook.com/share/1DuvteTp7D/">Facebook Moca
+            Store</a></footer>
+    <script src="script.js?v=6"></script>
+</body>
+
+</html>

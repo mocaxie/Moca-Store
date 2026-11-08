@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manfaat Joki | Moca Store</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎀%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+
+<body>
+    <header>
+        <h1 class="teks-tersembunyi">Moca Store</h1>
+        <div class="slider">
+            <div class="slide" style="display:block">
+                <img src="img/blue-archive.webp" alt="Pricelist joki Blue Archive">
+                <p class="nama-game"><b>Blue Archive</b><a class="btn" href="blue-archive.html">Lihat Pricelist</a></p>
+            </div>
+            <div class="slide">
+                <img src="img/wuthering-waves.webp" alt="Pricelist joki Wuthering Waves">
+                <p class="nama-game"><b>Wuthering Waves</b><a class="btn" href="wuthering-waves.html">Lihat Pricelist</a></p>
+            </div>
+            <div class="slide">
+                <img src="img/uma-musume.webp" alt="Pricelist joki Uma Musume">
+                <p class="nama-game"><b>Uma Musume</b><a class="btn" href="uma-musume.html">Lihat Pricelist</a></p>
+            </div>
+            <div class="slide">
+                <img src="img/honkai-star-rail.webp" alt="Pricelist joki Honkai Star Rail">
+                <p class="nama-game"><b>Honkai Star Rail</b><a class="btn" href="honkai-star-rail.html">Lihat Pricelist</a></p>
+            </div>
+            <button class="panah kiri" onclick="geser(-1)">&#10094;</button>
+            <button class="panah kanan" onclick="geser(1)">&#10095;</button>
+        </div>
+    </header>
+    <nav><button id="tombol-menu" onclick="bukaMenu()">☰ Menu</button>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a href="index.html#layanan">Layanan ▾</a>
+                <div class="drop-isi"><a href="blue-archive.html">Blue Archive</a><a
+                        href="wuthering-waves.html">Wuthering Waves</a><a href="uma-musume.html">Uma Musume</a><a
+                        href="honkai-star-rail.html">Honkai Star Rail</a></div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="isi">
+        <main>
+            <div class="kartu">
+                <h2>Manfaat Joki</h2>
+                <ul>
+                    <li><b>Hemat waktu:</b> akun tetap terawat saat kamu sibuk atau bekerja atau divece bermasalah.</li>
+                    <li><b>Hadiah tidak terlewat:</b> daily dan weekly mission tetap terselesaikan.</li>
+                    <li><b>Bantu konten sulit:</b> seperti raid atau endgame content yang butuh tim dan strategi kompleks.</li>
+                    <li><b>Akun terawat:</b> progres terus berjalan meski kamu tidak sempat bermain.</li>
+                    <li><b>Harga jelas:</b> semua tarif tertera di daftar harga tiap game.</li>
+                </ul><a class="btn" href="index.html">Kembali ke Home</a> <a class="btn" href="tos.html">Selanjutnya</a>
+            </div>
+        </main>
+        <aside class="sisi sisi-kiri">
+            <div class="kartu">
+                <h3>Order Cepat</h3><a class="btn" href="blue-archive.html">Blue Archive</a><a class="btn"
+                    href="wuthering-waves.html">Wuthering Waves</a><a class="btn" href="uma-musume.html">Uma
+                    Musume</a><a class="btn" href="honkai-star-rail.html">Honkai Star Rail</a>
+            </div>
+            <div class="kartu">
+                <h3>Alur Order</h3>
+                <ol>
+                    <li>Pilih game</li>
+                    <li>Isi formulir order</li>
+                    <li>Bayar dan konfirmasi</li>
+                    <li>Tunggu pengerjaan</li>
+                </ol>
+            </div>
+        </aside>
+        <aside class="sisi sisi-kanan">
+            <div class="kartu">
+                <h3>Status Slot</h3>
+                <p>Slot joki: buka</p>
+            </div>
+            <div class="kartu">
+                <h3>Metode Pembayaran</h3>
+                <p>QRIS, DANA, GoPay, OVO, SeaBank, ShopeePay, dan BRI.</p>
+            </div>
+            <div class="kartu">
+                <h3>Syarat dan Ketentuan</h3>
+                <p>Baca aturan sebelum order.</p><a class="btn" href="tos.html">Baca ToS</a>
+            </div>
+        </aside>
+    </div>
+    <div class="berjalan"><span>Open Slot Joki Game: Blue Archive, Wuthering Waves, Uma Musume, Honkai Star Rail. Hubungi: Facebook, Discord, WhatsApp</span></div>
+    <footer>© 2026 Moca Store. Dibuat oleh Moca. <a href="https://www.facebook.com/share/1DuvteTp7D/">Facebook Moca
+            Store</a></footer>
+    <script src="script.js?v=6"></script>
+</body>
+
+</html>
